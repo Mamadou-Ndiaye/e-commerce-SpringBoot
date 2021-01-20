@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 public class DatabaseConfig {
   // Pour dreployer sur heroku cela veut dire qu on a pas besoin ca a part ca
 
-    @Value("${postgres://agmsrryjuclbnz:638d94fbb1decae58e200b39963ecf90e34d620c2c812054cc2a071f7093106c@ec2-54-84-98-18.compute-1.amazonaws.com:5432/d2rmnkgn8pprg}")
+    @Value("${postgres://hklkutbzfjusli:81b94d5a5554a6e5c22e242e0598a6c72cb681f1f50ebc1a373487fbccdae81f@ec2-54-144-45-5.compute-1.amazonaws.com:5432/d7pfib19bhaht4}")
     private String dbUrl;
 
     @Bean
