@@ -1,4 +1,4 @@
-package ucad.com.ecommerceSpringBoot.web;
+package ucad.com.ecommerceSpringBoot;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -20,6 +20,7 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl(dbUrl);
+        System.out.print("Config database ");
         return new HikariDataSource(config);
     }
 }
