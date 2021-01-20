@@ -13,14 +13,13 @@ import javax.sql.DataSource;
 public class DatabaseConfig {
   // Pour dreployer sur heroku cela veut dire qu on a pas besoin ca a part ca
 
-    @Value("${postgres://qkzwphjxunpmep:7505750a7b92e945e9b6c212f58767aa1d7b71d1159190ebf41845a66d362d60@ec2-54-75-248-49.eu-west-1.compute.amazonaws.com:5432/d4ndcpa8gm9s41}")
+    @Value("${postgres://agmsrryjuclbnz:638d94fbb1decae58e200b39963ecf90e34d620c2c812054cc2a071f7093106c@ec2-54-84-98-18.compute-1.amazonaws.com:5432/d2rmnkgn8pprg}")
     private String dbUrl;
 
     @Bean
     public DataSource dataSource() {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl(dbUrl);
-        System.out.println("Bonjour oiuytrs");
         return new HikariDataSource(config);
     }
 }
