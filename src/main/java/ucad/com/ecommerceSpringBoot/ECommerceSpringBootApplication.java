@@ -46,6 +46,7 @@ public class ECommerceSpringBootApplication implements CommandLineRunner {
 				p.setCategory(c);
 				p.setPhotoName("unknown.png");
 				productRepository.save(p);
+				System.out.println("application started");
 			}
 		});
 
