@@ -31,13 +31,13 @@ public class ECommerceSpringBootApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		repositoryRestConfiguration.exposeIdsFor(Product.class, Category.class);// expose de Id
 
-        System.out.println("application started  signaler le demaragede  app");
+       
 
 		/*categoryRepository.save(new Category(null,"Computers",null,null,null));
 		categoryRepository.save(new Category(null,"Printers",null,null,null));
 		categoryRepository.save(new Category(null,"Smart phones",null,null,null));*/
-		//Random rnd=new Random();
-		/*categoryRepository.findAll().forEach(c->{
+		Random rnd=new Random();
+		categoryRepository.findAll().forEach(c->{
 			for (int i = 0; i <10 ; i++) {
 				Product p=new Product();
 				p.setName(RandomString.make(18));
@@ -50,7 +50,7 @@ public class ECommerceSpringBootApplication implements CommandLineRunner {
 				productRepository.save(p);
 				System.out.println("application started  signaler le demaragede  app");
 			}
-		});*/
+		});
 
 	}
 }
